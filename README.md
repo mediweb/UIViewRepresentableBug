@@ -1,5 +1,7 @@
 ##  SwiftUI bug
 
+![UIViewRepresentableBug](UIViewRepresentableBug.png)
+
 As of Swift 5.1.3 (Xcode 11.3.1), there is a bug with updating a UIViewRepresentable. When a SwiftUI View passes an
 `@ObservedObject` to a UIViewRepresentable, and the UIViewRepresentable is a `struct`, SwiftUI fails to call the
 `updateUIView` method of the UIViewRepresentable when the observed object changes.
